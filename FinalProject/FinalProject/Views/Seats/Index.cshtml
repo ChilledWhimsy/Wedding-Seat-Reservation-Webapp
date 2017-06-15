@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Seat>
+
+<img src="/Models/FloorPlan.png" alt="Wedding Floor Plan" />
+
+<form asp-action="Index" asp-controller="Seats">
+    <legend>Seat Reservation</legend>
+
+    <div class="form-group">
+        <label asp-for="SeatCode"></label>
+        <input asp-for="SeatCode" class="form-control" />
+    </div>
+
+     <div class="form-group">
+        <label asp-for="OccName"></label>
+        <input asp-for="OccName" class="form-control" />
+    </div>
+
+     <div class="form-group">
+        <label asp-for="OccAuth"></label>
+        <input asp-for="OccAuth" class="form-control" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<h3>Reserved</h3>
+<ul>
+    @foreach(Seat s in Model) {
+        @if(s.reserved) {
+            <li>@s.SeatCode is reserved by @s.OccName</li>
+            <li></li>
+        }
+    }
+</ul>
+
+
+

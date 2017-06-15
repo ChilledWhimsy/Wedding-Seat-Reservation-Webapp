@@ -1,0 +1,29 @@
+@model Seat
+
+<form asp-action="Index" asp-controller="Seats">
+    <legend>Security Portal</legend>
+
+    <div class="form-group">
+        <label asp-for="Seat"></label>
+        <input asp-for="SeatCode" class="form-control" >
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@If (Model != null)
+{
+    @If(@Model.Reserved)
+    {
+        <h2>@Model.SeatCode is Reserved</h2>
+        <ul>
+            <li>@Model.OccName</li>
+            <li>@Model.OccAuth</li>
+        </ul>
+    }
+    @Else
+    {
+        <h2>@Model.SeatCode is not reserved</h2>
+    }
+    
+}

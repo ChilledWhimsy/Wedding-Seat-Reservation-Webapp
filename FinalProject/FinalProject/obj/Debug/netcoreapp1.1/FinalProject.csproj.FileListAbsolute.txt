@@ -1,0 +1,8 @@
+/home/pedro/cSharpTrack/FinalProject/bin/Debug/netcoreapp1.1/FinalProject.deps.json
+/home/pedro/cSharpTrack/FinalProject/bin/Debug/netcoreapp1.1/FinalProject.runtimeconfig.json
+/home/pedro/cSharpTrack/FinalProject/bin/Debug/netcoreapp1.1/FinalProject.runtimeconfig.dev.json
+/home/pedro/cSharpTrack/FinalProject/bin/Debug/netcoreapp1.1/FinalProject.dll
+/home/pedro/cSharpTrack/FinalProject/bin/Debug/netcoreapp1.1/FinalProject.pdb
+/home/pedro/cSharpTrack/FinalProject/obj/Debug/netcoreapp1.1/FinalProject.AssemblyInfo.cs
+/home/pedro/cSharpTrack/FinalProject/obj/Debug/netcoreapp1.1/FinalProject.dll
+/home/pedro/cSharpTrack/FinalProject/obj/Debug/netcoreapp1.1/FinalProject.pdb
